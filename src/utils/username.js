@@ -1,15 +1,28 @@
 
-const ADJECTIVES =[
-    'daffy' , 'discreet','callous','labored','snotty','impressive','outrageous','roomy','futuristic'
+
+const ADJECTIVES = [
+    'boundless',
+    'plausible',
+    'sleepy',
+    'electronic',
+    'dangerous',
+    'slim',
+    'purple',
 ]
 
-const ANIMALS =[
-    'hamster','okapi','muskrat','tapir','lion','boar','coati','hyena','basilisk',
+const OBJECTS = [
+    'puddle',
+    'piano',
+    'window',
+    'bowl',
+    'socks',
+    'brocolli',
+    'chalk'
 ]
 
-function genRandomUsername(){
-    const adj = ADJECTIVES[Math.floor(Math.random()*9)]
-    const obj = ANIMALS[Math.floor(Math.random()*9)]
+function genRandomUsername() {
+    const adj = ADJECTIVES[Math.floor(Math.random() * 7)]
+    const obj = OBJECTS[Math.floor(Math.random() * 7)]
     return `${adj}-${obj}`
 }
 
